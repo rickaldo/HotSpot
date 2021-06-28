@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.CreateNormalProfil">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/LogIn_Register"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="34sp"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/eTUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:ems="16"
+        android:hint="@string/Register_Username"
+        android:padding="10dp"
+        android:background="@drawable/rounded_textview"
+        android:layout_marginTop="40dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etnemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:ems="16"
+        android:padding="10dp"
+        android:background="@drawable/rounded_textview"
+        android:hint="@string/LogIn_Email"
+        android:layout_marginTop="25dp"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etnpasswort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:ems="16"
+        android:padding="10dp"
+        android:background="@drawable/rounded_textview"
+        android:hint="@string/LogIn_Password"
+        android:layout_marginTop="25dp"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/etnpasswort2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:ems="16"
+        android:padding="10dp"
+        android:background="@drawable/rounded_textview"
+        android:hint="@string/Register_ConfirmPassword"
+        android:layout_marginTop="25dp"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/tVAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:hint="@string/Register_DateOfBirth"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/BtnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/LogIn_Register"
+        android:background="@color/HotspotColor"
+        android:textColor="@color/Weiß"
+        android:layout_marginTop="50dp" />
+
+
+</LinearLayout>

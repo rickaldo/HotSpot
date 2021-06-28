@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.CreateBusinessProfil">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/LogIn_Register"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="34sp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/etbname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:ems="16"
+        android:padding="10dp"
+        android:background="@drawable/rounded_textview"
+        android:hint="@string/Register_CompanyName"
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/etbemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/rounded_textview"
+        android:ems="16"
+        android:hint="@string/LogIn_Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/etbpasswort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/rounded_textview"
+        android:ems="16"
+        android:hint="@string/LogIn_Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/etbpasswort2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/rounded_textview"
+        android:ems="16"
+        android:hint="@string/Register_ConfirmPassword"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btbcreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/LogIn_Register"
+        android:background="@color/HotspotColor"
+        android:textColor="@color/Weiß"
+        android:layout_marginTop="40dp"/>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_topevents_image"
+    android:orientation="horizontal">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false">
+        <androidx.cardview.widget.CardView
+            android:layout_width="133dp"
+            android:layout_height="200dp"
+            android:elevation="10dp"
+            android:id="@+id/cv_tp_imageview">
+            <com.example.databasetest.Adapter.CustomImageView
+                android:id="@+id/iv_topevents_image"
+                android:layout_width="133dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</LinearLayout>

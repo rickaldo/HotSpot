@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">HotSpot</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="mapbox_acces_token">pk.eyJ1Ijoicmlja2FsZG8iLCJhIjoiY2s5Znl4dzRvMGdmdDNmcW00a3ExM2EwMyJ9.jC6y_7Wfa0JuFVXbdTh7Zg</string>
+    <string name="new_location" />
+    <string name="search">Search..</string>
+    <string name="no_event_found">No events were found in your area</string>
+    <string name="one_event_found">1 event has been found in your area</string>
+    <string name="more_events_found"> events were found in your area</string>
+    <string name="eventname">Name:</string>
+    <string name="eventaddess">Address:</string>
+    <string name="eventtime">Time:</string>
+    <string name="eventdate">Date:</string>
+    <string name="Nav_Map">Map</string>
+    <string name="Nav_TopEvents">Top-Events</string>
+    <string name="Nav_Explore">Explore</string>
+    <string name="Nav_Profil">Profil</string>
+    <string name="Settings_Achievements">Achievements</string>
+    <string name="Profil_MyProfil">My profile</string>
+    <string name="Profil_CurrenEvent">Current events</string>
+    <string name="Profil_LastEvents">Last events</string>
+    <string name="Settings">Settings</string>
+    <string name="Settings_RecommendHotspot">Recommend Hotspot</string>
+    <string name="Settings_MapLayout">Map layout</string>
+    <string name="Settings_LogOut">Log out</string>
+    <string name="Settings_DarkMap">Dark Mode</string>
+    <string name="Settings_LightMap">Light Mode</string>
+    <string name="TopEvents_MyEvents">My events</string>
+    <string name="TopEvents_TopEvents">Top events</string>
+    <string name="Explore_EventsForYou">Events for you</string>
+    <string name="Filter_YourEvents">Filter your events</string>
+    <string name="Filter_Distance">Distance</string>
+    <string name="Filter_Price">Price</string>
+    <string name="Filter_Date">Date</string>
+    <string name="Filter_SelectDate">Select date</string>
+    <string name="Filter_Location">Location</string>
+    <string name="Filter_City">City</string>
+    <string name="Filter_VerifiedUser">Verified user</string>
+    <string name="Filter_Categories">Categories</string>
+    <string name="Filter_Apply">Apply</string>
+    <string name="Filter_Cancel">Cancel</string>
+    <string name="Filter_Confirm">Confirm</string>
+    <string name="LogIn">Log In</string>
+    <string name="LogIn_Email">E-mail</string>
+    <string name="LogIn_Password">Password</string>
+    <string name="LogIn_Register">Sign Up</string>
+    <string name="Register_Username">Username</string>
+    <string name="Register_ConfirmPassword">Confirm Password</string>
+    <string name="Register_DateOfBirth">Date of birth</string>
+    <string name="Register_CompanyName">Company name</string>
+    <string name="Create_Hotspot">Create Event</string>
+    <string name="Create_Info">Enter information about your event</string>
+    <string name="Create_EventName">Event name</string>
+    <string name="Create_Postcode">Postcode</string>
+    <string name="Create_Street">Street</string>
+    <string name="Create_HouseNumber">House number</string>
+    <string name="Create_Date">Select Date</string>
+    <string name="Create_Time">Select Time</string>
+    <string name="Categorie_Sport">Sport</string>
+    <string name="Categorie_Party">Party</string>
+    <string name="Categorie_Music">Music</string>
+    <string name="Categorie_InfoEvent">Info event</string>
+    <string name="Categorie_Fesivals">Fesivals</string>
+    <string name="Categorie_Cultur">Cultur</string>
+    <string name="Categorie_FleaMarkets">Flea markets</string>
+    <string name="MyEvents_NoEventsAddedYet">No events added yet</string>
+    <string name="Toast_SelectAllFields">Please fill out all fields</string>
+    <string name="Toast_PasswordsDontMatch">Passwords don\'t match</string>
+    <string name="Toast_AuthenticationFailed">Authentication failed</string>
+    <string name="Toast_MailorPasswordIncorrect">Email or password incorrect</string>
+    <string name="Toast_EventCreated">Event successfully created</string>
+    <string name="Toast_EventExists">This event already exists</string>
+    <string name="Toast_EventRemovedFromMyEvents">Event has been removed from \'My Events\'</string>
+    <string name="Toast_AddedToMyEvents">Event was added to \'My Events\'</string>
+    <string name="Toast_ErrorOccured">An error has occurred</string>
+    <string name="Toast_PermissionNotGranted">Permissions not granted</string>
+    <string name="Toast_PermissionExplanation">This app needs location permissions in order to show its functionality</string>
+    <string name="Toast_ImageUploaded">Image successfully uploaded</string>
+
+
+
+    <string-array name="Categorie_Array">
+        <item>@string/Categorie_Sport</item>
+        <item>@string/Categorie_Party</item>
+        <item>@string/Categorie_Music</item>
+        <item>@string/Categorie_InfoEvent</item>
+        <item>@string/Categorie_Fesivals</item>
+        <item>@string/Categorie_Cultur</item>
+        <item>@string/Categorie_FleaMarkets</item>
+    </string-array>
+</resources>

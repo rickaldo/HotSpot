@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.newEvent">
+
+    <TextView
+        android:id="@+id/tVDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:text="Select Date"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/tVTimee"
+        app:layout_constraintStart_toStartOf="@+id/tVTimee" />
+
+    <Button
+        android:id="@+id/BtnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tVTimee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="58dp"
+        android:text="Select Time"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/BtnSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/eteventname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:ems="10"
+        android:hint="Eventname"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/eTStraße"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Straße"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/eTStadt"
+        app:layout_constraintTop_toBottomOf="@+id/eTStadt" />
+
+    <EditText
+        android:id="@+id/eTStadt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Stadt"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/eteventname"
+        app:layout_constraintTop_toBottomOf="@+id/eteventname" />
+
+    <EditText
+        android:id="@+id/eTHNR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:hint="Hausnummer"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/eTStraße"
+        app:layout_constraintTop_toBottomOf="@+id/eTStraße" />
+
+    <EditText
+        android:id="@+id/eTkategorieen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="2dp"
+        android:ems="10"
+        android:hint="Kategorie"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/eTHNR"
+        app:layout_constraintTop_toBottomOf="@+id/eTHNR" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

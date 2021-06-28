@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Filtereinstellungen">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Filter_YourEvents"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_margin="20dp"
+        android:clickable="false"
+        android:text="@string/Filter_Distance"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_filter_showumkreis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignBaseline="@+id/textView11"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:text="TextView"
+        android:textSize="18sp" />
+
+    <SeekBar
+        android:id="@+id/sB_Entfernung"
+        android:layout_width="313dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tv_filter_showumkreis"
+        android:layout_centerHorizontal="true"
+        android:max="150" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/sB_Entfernung"
+        android:clickable="false"
+        android:text="@string/Filter_Price"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_filter_showprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_below="@+id/sB_Entfernung"
+        android:layout_alignParentEnd="true"
+        android:text="TextView"
+        android:textSize="18sp" />
+
+    <SeekBar
+        android:id="@+id/sB_Preis"
+        android:layout_width="313dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tv_filter_showprice"
+        android:layout_centerHorizontal="true"
+        android:max="300" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/sB_Preis"
+        android:clickable="false"
+        android:text="@string/Filter_Date"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_filter_datum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/sB_Preis"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@id/textView6"
+        android:text="@string/Filter_SelectDate"
+        android:textSize="18sp"
+        app:autoSizeTextType="uniform" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/textView6"
+        android:clickable="false"
+        android:text="@string/Filter_Location"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/et_filter_stadt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentEnd="true"
+        android:ems="13"
+        android:textAlignment="center"
+        android:hint="@string/Filter_City"
+        android:textSize="12sp"
+        android:background="@drawable/rounded_textview"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_filter_kategorien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/textView4"
+        android:textSize="24sp"
+        android:text="@string/Filter_Categories"/>
+
+    <Button
+        android:id="@+id/btn_filter_anwenden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_filter_kategorien"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Filter_Apply" />
+
+    <Button
+        android:id="@+id/btn_filter_abbrechen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btn_filter_anwenden"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Filter_Cancel" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gl_show_date"
+        android:layout_width="355dp"
+        android:layout_height="576dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <com.squareup.timessquare.CalendarPickerView
+            android:id="@+id/calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_column="0"
+            app:layout_row="0" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/btn_datum_bestätigen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Filter_Confirm"
+        android:visibility="gone"
+        android:layout_below="@+id/gl_show_date"
+        android:layout_alignParentEnd="true"/>
+
+    <!--
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:clickable="false"
+                android:text="@string/Filter_VerifiedUser"
+                android:textSize="24sp" />
+
+            <Switch
+                android:id="@+id/sw_verifizierte_user"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="130dp" />
+    -->
+</RelativeLayout>

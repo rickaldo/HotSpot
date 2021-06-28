@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.Kategorien" >
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="Wählen Sie, welche Kategorien angezeigt werden"
+        android:textSize="30sp" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gl_kategorien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:saveEnabled="false"
+        app:columnCount="2"
+        app:columnOrderPreserved="true"
+        app:rowCount="3"
+        app:rowOrderPreserved="true">
+
+        <ToggleButton
+            android:id="@+id/tg_kultur"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="ToggleButton"
+            android:textOff="Kultur"
+            android:textOn="Kultur"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <ToggleButton
+            android:id="@+id/tg_feste"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="ToggleButton"
+            android:textOff="Feste"
+            android:textOn="Feste"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <ToggleButton
+            android:id="@+id/tg_musik"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="ToggleButton"
+            android:textOff="Musik"
+            android:textOn="Musik"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <ToggleButton
+            android:id="@+id/tg_info"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="ToggleButton"
+            android:textOff="Infoveranstaltung"
+            android:textOn="Infoveranstaltung"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <ToggleButton
+            android:id="@+id/tg_sport"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="ToggleButton"
+            android:textOff="Sport"
+            android:textOn="Sport"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <ToggleButton
+            android:id="@+id/tg_flohmarkt"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="ToggleButton"
+            android:textOff="Flohmarkt"
+            android:textOn="Flohmarkt"
+            app:layout_column="1"
+            app:layout_row="2" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/btn_kategorie_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Auswahl bestätigen" />
+</LinearLayout>

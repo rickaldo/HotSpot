@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_topevents_info">
+    <ScrollView
+        android:layout_width="133dp"
+        android:layout_height="200dp"
+        android:clickable="false">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            android:elevation="10dp"
+            android:id="@+id/cv_tp_imageview2">
+            <ImageView
+                android:layout_width="133dp"
+                android:layout_height="200dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_topevents_name"
+                android:textSize="16sp"
+                android:text="@string/Create_EventName"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_topevents_price"
+                android:layout_marginTop="50dp"
+                android:textSize="16sp"
+                android:text="@string/Filter_Price"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_topevents_date"
+                android:textSize="16sp"
+                android:layout_marginTop="90dp"
+                android:text="@string/Filter_Date"/>
+
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</RelativeLayout>

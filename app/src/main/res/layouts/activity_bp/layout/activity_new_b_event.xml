@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.newBEvent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/Create_Hotspot"
+        android:textSize="34sp" />
+
+    <ImageView
+        android:id="@+id/iv_uploadimage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/pictureadd" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/Create_Info"
+        android:textColor="@color/HotspotColor"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etbeventname"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_textview"
+        android:hint="@string/Create_EventName" />
+
+    <Spinner
+        android:id="@+id/sp_kategorie"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:spinnerMode="dropdown"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/etpreis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_textview"
+        android:hint="@string/Filter_Price"
+        android:inputType="numberSigned"
+        />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="10">
+        <EditText
+            android:id="@+id/etPlz2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_textview"
+            android:hint="@string/Create_Postcode" />
+
+        <EditText
+            android:id="@+id/eTStadt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_textview"
+            android:hint="@string/Filter_City" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="10">
+        <EditText
+            android:id="@+id/eTStraße2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_weight="5"
+            android:background="@drawable/rounded_textview"
+            android:hint="@string/Create_Street" />
+
+        <EditText
+            android:id="@+id/eTHNR2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:layout_weight="5"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_textview"
+            android:hint="@string/Create_HouseNumber" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="10">
+        <TextView
+            android:id="@+id/tVDate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Create_Date"
+            android:layout_margin="10dp"
+            android:textSize="33sp" />
+
+        <TextView
+            android:id="@+id/tVTimee2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Create_Time"
+            android:layout_margin="10dp"
+            android:textSize="33sp" />
+        </TableRow>
+    <Button
+        android:id="@+id/btnSearch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Create_Hotspot"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_kategorien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:visibility="invisible"
+        android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</ScrollView>

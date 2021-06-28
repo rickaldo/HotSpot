@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_marginTop="120dp"
+        app:srcCompat="@drawable/hotspotfinal" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/HotspotColor"
+        android:text="@string/LogIn" />
+
+    <EditText
+        android:id="@+id/etbenutzername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:ems="16"
+        android:padding="10dp"
+        android:background="@drawable/rounded_textview"
+        android:hint="@string/LogIn_Email"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etpasswort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/rounded_textview"
+        android:ems="16"
+        android:hint="@string/LogIn_Password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/tv_main_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/LogIn"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/tv_main_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/LogIn_Register"
+        android:textSize="20sp"/>
+
+</LinearLayout>
